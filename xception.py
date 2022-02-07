@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# This script trains xception
+# This is the script used for the publication
+
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"

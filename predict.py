@@ -1,7 +1,6 @@
-"""
-    Python Script for using Model to predict categories of single or several
-     images at once
-"""
+#!/usr/bin/python
+# This script prints the predicted body part for a given image
+
 import os
 
 import numpy as np

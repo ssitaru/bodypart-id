@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# This script trains resnet50
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"

@@ -1,8 +1,7 @@
 #!/usr/bin/python
-"""
-    Python Script for using Model to predict categories of single or several
-     images at once
-"""
+
+# this script opens predict_detail.csv and writes to it the prediction output as well as the weights of the last layer
+
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"

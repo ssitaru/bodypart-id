@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# this scripts predicts the body part for all images in a given SQL table, and writes them back to SQL
+
 import json
 import sys
 import mysql.connector

@@ -1,7 +1,6 @@
-"""
-    Python Script for using Model to predict categories of single or several
-     images at once
-"""
+#!/usr/bin/python
+# This script prints the top 3 predicted and real body parts in the validation dataset (images/test)
+
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"

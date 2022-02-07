@@ -1,12 +1,10 @@
-"""
-    Python script for splitting image data to train and test data per category/bodypart
-"""
+#!/usr/bin/python
+# This script splits the data 80/20 in train/teeest
 import os
 import argparse
 import random
 from shutil import copy
 
-# Parse first argument which is bodypart (e.g. python shuffle_split.py arms)
 PARSER = argparse.ArgumentParser(description='Split images.')
 PARSER.add_argument('path', metavar='P', type=str, nargs='+',
                     help='path')

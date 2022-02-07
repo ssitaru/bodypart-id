@@ -1,7 +1,5 @@
-"""
-    Python Script for using Model to predict categories of single or several
-     images at once
-"""
+#!/usr/bin/python
+# This script predicts body part in test dataset
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
