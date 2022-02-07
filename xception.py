@@ -8,7 +8,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 import tensorflow
-import keras
+from tensorflow import keras
 import numpy as np
 from keras.applications.xception import Xception
 from keras.preprocessing.image import ImageDataGenerator
@@ -52,7 +52,7 @@ MODEL.add(keras.layers.Dropout(rate=0.5))
 # Dense layer (normal Neurons layer) with (*, 256) arrays as output and activation function relu
 MODEL.add(keras.layers.Dense(256, activation='relu'))
 # Last Layer is again Dense Layer with (*, 14) and activation function sigmoid
-MODEL.add(keras.layers.Dense(12, activation='softmax'))
+MODEL.add(keras.layers.Dense(2, activation='softmax'))
 MODEL.summary()
 
 # Compiling model for usage

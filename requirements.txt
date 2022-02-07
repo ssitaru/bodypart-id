@@ -2,3 +2,5 @@ tensorflow
 keras
 mysql-connector-python
 numpy
+pillow
+scipy

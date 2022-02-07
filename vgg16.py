@@ -6,6 +6,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import tensorflow
+from tensorflow import keras
 import keras
 import numpy as np
 from keras.applications.vgg16 import VGG16

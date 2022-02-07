@@ -6,6 +6,8 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import numpy as np
+import tensorflow
+from tensorflow import keras
 from keras import optimizers
 from keras.models import load_model
 from keras.preprocessing import image
