@@ -1,0 +1,4 @@
+tensorflow
+keras
+mysql-connector-python
+numpy
