@@ -26,7 +26,7 @@ Put the data in a folder e.g., `images.unsorted` (the folder should not be named
 - images.unsorted/`bodypart2`/image2.jpg
 - `...`
 
-The original dataset cannot be provided, since it contains sensible patient photos. To test, a dataset like [https://www.tensorflow.org/datasets/catalog/cats_vs_dogs](Cats & Dogs) can be used.
+The original dataset cannot be provided, since it contains sensible patient photos. To test, a dataset like https://www.tensorflow.org/datasets/catalog/cats_vs_dogs can be used.
 
 To split the data into test/train datasets, run:
 ```
