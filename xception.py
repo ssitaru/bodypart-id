@@ -39,7 +39,7 @@ TESTDATA = TSDATA.flow_from_directory(directory='./'+dp+'/test/', target_size=(2
 
 #Setting up model
 MODEL = keras.models.Sequential()
-# We use the pretrained model InceptionV3 provided by keras
+# We use the pretrained model provided by keras
 if ARGS.no_init_weights:
       w = 'imagenet'
 else:
@@ -52,7 +52,7 @@ MODEL.add(keras.layers.Dropout(rate=0.5))
 # Dense layer (normal Neurons layer) with (*, 256) arrays as output and activation function relu
 MODEL.add(keras.layers.Dense(256, activation='relu'))
 # Last Layer is again Dense Layer with (*, 14) and activation function sigmoid
-MODEL.add(keras.layers.Dense(2, activation='softmax'))
+MODEL.add(keras.layers.Dense(12, activation='softmax'))
 MODEL.summary()
 
 # Compiling model for usage

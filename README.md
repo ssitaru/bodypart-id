@@ -6,13 +6,17 @@ Code authors: Sebastian Sitaru, Talel Oueslati
 
 ## Install
 
-Install python v3 and pip. Then run:
+Clone this repository. Install python v3 and pip. Then run:
 
 ```
 pip install -r requirements.txt
 mkdir images.unsorted
 mkdir -p images/{train,test}
 ```
+
+Install time on a normal desktop computer: 10min (depending on network connection).
+
+An ML-enabled graphics card, such as GTX 3090, and enough RAM is recommended. Our training was done on a machine running 2xGTX3090 and 64GB of RAM.
 
 ## Preparing data
 
@@ -26,7 +30,10 @@ Put the data in a folder e.g., `images.unsorted` (the folder should not be named
 - images.unsorted/`bodypart2`/image2.jpg
 - `...`
 
-The original dataset cannot be provided, since it contains sensible patient photos. To test, a dataset like https://www.tensorflow.org/datasets/catalog/cats_vs_dogs can be used.
+The original dataset cannot be provided, since it contains sensible patient photos. To test, a dataset like https://www.tensorflow.org/datasets/catalog/cats_vs_dogs can be used. Please note that for this dataset, the number of neurons in the last layer, corresponding to the number of classes, needs to be adjusted.
+```
+MODEL.add(keras.layers.Dense(n, activation='softmax'))
+```
 
 To split the data into test/train datasets, run:
 ```
